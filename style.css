@@ -78,6 +78,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    
   }
 
   #lezioni .row,
@@ -89,18 +91,25 @@ img {
   #steps .row {
     background-color: white;
   }
-  
-  
+
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 100%;
 }
 
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  
+  width: 100%;
+}
+}
 
 
 @media screen and (max-width: 1000px) {
 
-  body::after {
-    content: "";
-  clear: both;
-  display: table;
+  .row {
+    width: 100%;
   }
   
 }
