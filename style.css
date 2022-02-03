@@ -97,8 +97,10 @@ img {
 
 @media screen and (max-width: 1000px) {
 
-  body {
-    width: 1000px;
+  body::after {
+    content: "";
+  clear: both;
+  display: table;
   }
   
 }
